@@ -19,3 +19,10 @@ var config = {
 
 firebase.initializeApp(config);
 var database = firebase.database();
+
+var trainDiff = 0;
+var trainRemainder = 0;
+var minutesArrival = "";
+var nextTrain = "";
+var frequency = snapshot.val().frequency;
+

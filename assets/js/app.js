@@ -26,3 +26,20 @@ var minutesArrival = "";
 var nextTrain = "";
 var frequency = snapshot.val().frequency;
 
+trainDiff = moment().diff(moment.unix(snapshot.val().time), "minutes");
+trainRemainder = trainDiff % frequency;
+minutesTillArrival = frequency - trainRemainder;
+nextTrainTime = moment().add(minutesTillArrival, "m").format("hh:mm A");
+
+
+
+
+
+
+
+
+
+
+
+
+
